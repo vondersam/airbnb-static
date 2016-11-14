@@ -1,0 +1,17 @@
+<div class="padded">
+  <h2 class="text-center">Our Team</h2>
+  <ul class="list-inline text-center">
+    <% ["anne", "seb", "romain"].each do |member| %>
+      <li>
+        <%= image_tag "#{member}.jpg", class: "avatar-xl" %>
+        <h3><%= member.capitalize %></h3>
+      </li>
+    <% end %>
+  </ul>
+  <div class="text-center">
+    <a href="mailto:samuelyret@gmail.com" class="bg-email">
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      samuelyret@gmail.com
+    </a>
+  </div>
+</div>
